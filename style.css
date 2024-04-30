@@ -112,6 +112,8 @@ body {
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
   margin: 30px 15px 30px 0;
+  position: relative;
+  left: 32px;
 }
 .home-sci a:hover {
   background: #0ef;
@@ -220,7 +222,6 @@ body {
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
-
 }
 .read {
   display: inline-block;
@@ -586,7 +587,6 @@ form textarea {
   visibility: hidden;
 }
 @media only screen and (max-width: 600px) {
-
   .about-content {
     flex-direction: column;
   }
@@ -601,22 +601,31 @@ form textarea {
 }
 
 @media only screen and (max-width: 600px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-text p{
+    width: 158% !important;
+  }
+ 
   .Technical-bars .bar .progress-line {
     width: 300%;
   }
 
-  #lst{
-  width: 356px;
+  #lst {
+    width: 356px;
   }
   .home-content {
     position: relative;
-    left: 83px;
-    width: 333px;
+    left: 49px;
+    width: 190% !important;
     top: -100px;
   }
- 
+
   .home {
     background: none; /* Hide the background image */
+    width: 148% !important;
   }
 
   .navbar a {
@@ -685,9 +694,9 @@ form textarea {
   }
   .contact-form form {
     position: relative;
-    top: 88px;
-    right: 18px;
-    width: 212px;
+    top: 0px;
+    right: -17px;
+    width: 165% !important;
   }
   .contact-text h2 {
     position: relative;
@@ -707,7 +716,7 @@ form textarea {
     right: 0px;
     height: 50vh;
     width: 200px;
-    background-color: #a900ff0f;
+    background-color: #081b29;
     padding: 80px 0 0 10px;
     transition: 1s;
   }
@@ -724,29 +733,29 @@ form textarea {
     left: 11px;
     font-size: 24px;
   }
-}
-.home-sci a {
-  position: relative;
-  left: 29px;
-}
-.git 
-{
-  position: relative;
-  right: 30px;
-}
-.p{
-  position: relative;
-  top: 0.6px;
-}
-.click h1{
-  position: relative;
-  left: 16px;
-}
-.clic h1{
-  position: relative;
-  right: 14px;
-}
-.cli h1{
-  position: relative;
-  right: 12px;
+
+  .home-sci a {
+    position: relative;
+    left: 29px;
+  }
+  .git {
+    position: relative;
+    right: 30px;
+  }
+  .p {
+    position: relative;
+    top: 0.6px;
+  }
+  .click h1 {
+    position: relative;
+    left: 16px;
+  }
+  .clic h1 {
+    position: relative;
+    right: 14px;
+  }
+  .cli h1 {
+    position: relative;
+    right: 12px;
+  }
 }
